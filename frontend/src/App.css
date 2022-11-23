@@ -1,0 +1,207 @@
+p {
+  font-size: 23px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+.LinkAtag {
+  border-bottom: 1px solid #e63732;
+}
+
+.ftrlink {
+  font-size: 23px;
+}
+@font-face {
+  font-family: "Menlo Font"; /*Can be any text*/
+  src: local("AirbnbCerealMenloFont"),
+    url("./Fonts/menlo-cufonfonts/Menlo-Regular.ttf") format("truetype");
+}
+.container {
+  font-family: "Menlo Font";
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+.container-fluid {
+  font-family: "Menlo Font";
+}
+.container h1 {
+  font-size: 2.4em;
+  font-weight: 10px;
+}
+button {
+  letter-spacing: 0px;
+}
+
+.SubBtn {
+  background-color: #e63732;
+  color: white;
+}
+.SubBtn:hover {
+  background-color: #e63732;
+  color: white;
+}
+.SubBtn:disabled {
+  background-color: #f5b4b1;
+  color: black;
+  cursor: not-allowed;
+}
+
+.ftr {
+  background-color: #f5b4b1;
+}
+.navStyle:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #e63732;
+}
+.read-or-hide {
+  color: blue;
+}
+.Custombutton {
+  background-color: #e63732;
+  color: #fff;
+  border: none;
+  font-size: 26px;
+}
+.CustomKmorebtn {
+  background-color: #fff;
+  font-size: 26px;
+}
+.logoimg {
+  width: 200px;
+}
+.HeadMsg {
+  font-size: 57px;
+}
+.CodeCls {
+  letter-spacing: 3px;
+}
+
+.fullScreenHover:hover {
+  text-decoration: underline;
+  text-decoration-color: #e63732;
+  text-underline-offset: 4px;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: initial;
+}
+a:hover:-webkit-any-link {
+  color: initial;
+}
+@keyframes modalFade {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animatemodal {
+  animation-name: modalFade;
+  animation-duration: 1s;
+}
+@keyframes modalFadeEnq {
+  from {
+    transform: translate(0%) scale(0%);
+
+    /* opacity: 0; */
+  }
+  to {
+    transform: translateY(0) scale(100%);
+    /* opacity: 1; */
+  }
+}
+.animatemodalEnquire {
+  animation-name: modalFadeEnq;
+  animation-duration: 0.3s;
+}
+.LinkAtag:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #e63732;
+}
+/* .modal-dialog {
+  transition-duration: 2s !important;
+} */
+.CollNow {
+  background-color: #e63732;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #e63732;
+  border-radius: 79px;
+  color: #fff;
+}
+
+.navToggle:focus {
+  box-shadow: none;
+}
+@media only screen and (max-width: 425px) {
+  p {
+    font-size: 15px;
+  }
+  .ftrlink {
+    font-size: 15px;
+  }
+  .Custombutton {
+    font-size: 15px;
+  }
+  .CustomKmorebtn {
+    font-size: 15px;
+  }
+  .HeadMsg {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    font-size: 18px;
+  }
+  .container h1 {
+    font-size: 1.5em;
+    font-weight: 8px;
+  }
+  button {
+    letter-spacing: 1px;
+  }
+  .heroSecImg {
+    display: none;
+  }
+  .logoimg {
+    width: 100px;
+  }
+  .HeadMsg {
+    font-size: 28px;
+  }
+}
+
+.xs-icon {
+  width: 12px;
+  height: 12px;
+}
+.sm-icon {
+  width: 14px;
+  height: 14px;
+}
+.md-icon {
+  width: 16px;
+  height: 16px;
+}
+.lg-icon {
+  width: 20px;
+  height: 20px;
+}
+.xl-icon {
+  width: 24px;
+  height: 24px;
+}

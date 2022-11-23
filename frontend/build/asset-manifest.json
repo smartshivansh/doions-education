@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.28082404.css",
+    "main.js": "/static/js/main.c9758735.js",
+    "static/js/787.f4e2902d.chunk.js": "/static/js/787.f4e2902d.chunk.js",
+    "static/media/imgFour.JPG": "/static/media/imgFour.2d4d9ab20700a6954044.JPG",
+    "static/media/imgThree.JPG": "/static/media/imgThree.8c42ed8c7be89083c6ae.JPG",
+    "static/media/imgOne.png": "/static/media/imgOne.efcaad818320d3963e22.png",
+    "static/media/Menlo-Regular.ttf": "/static/media/Menlo-Regular.92e41f43900c256f2286.ttf",
+    "static/media/imgFive.png": "/static/media/imgFive.4e365dd91aae5822e28b.png",
+    "static/media/imgTwo.jpeg": "/static/media/imgTwo.c5c6d42bc901713c2ea6.jpeg",
+    "static/media/DigitalMarketing.png": "/static/media/DigitalMarketing.66c5c41080f15a6edc57.png",
+    "static/media/FullStack.png": "/static/media/FullStack.30f5070170d402059f8d.png",
+    "static/media/logo.png": "/static/media/logo.0316d215824917e7471e.png",
+    "static/media/time.png": "/static/media/time.de907e06b216ab66f4cd.png",
+    "static/media/Loading.svg": "/static/media/Loading.310fa19fbbbc390f89eaf32a662b7d4c.svg",
+    "index.html": "/index.html",
+    "main.28082404.css.map": "/static/css/main.28082404.css.map",
+    "main.c9758735.js.map": "/static/js/main.c9758735.js.map",
+    "787.f4e2902d.chunk.js.map": "/static/js/787.f4e2902d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28082404.css",
+    "static/js/main.c9758735.js"
+  ]
+}
