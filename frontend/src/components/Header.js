@@ -33,7 +33,7 @@ function Header() {
       </div>
       <div className={classes.navbar}>
         <a href="/projectintern" className={classes.navitem}>
-          Join as a project Intern
+          Join as a Project Intern
         </a>
         <a href="https://doionseducation.myty.in/" className={classes.navitem}>
           Blog
@@ -72,7 +72,7 @@ function Header() {
           className={classes.sidebaritem}
           style={{ color: "white" }}
         >
-          Join as a project Intern
+          Join as a Project Intern
         </a>
         <a
           href="https://doionseducation.myty.in/"
