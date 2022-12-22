@@ -4,8 +4,6 @@ const api =
     : "https://www.education.doions.com/api";
 // : "http://localhost:8090/api";
 
-console.log(api);
-
 export const apis = {
   sendEnquiryMessage: `${api}/message/doions-education`,
   contactUs: `${api}/message/courses-contact-us`,

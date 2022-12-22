@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  margin-top: 3rem;
+  margin-top: 6rem;
+  font-family: "Menlo";
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 1.5rem;
+}
+
+.listitem {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 980px) {
+  .container {
+    margin-top: 4rem;
+  }
+  .heading {
+    font-size: 2.3rem;
+  }
+  .content {
+    font-size: 1.5rem;
+  }
+  .listitem {
+    font-size: 1.5rem;
+    list-style: 1.5rem;
+  }
+}

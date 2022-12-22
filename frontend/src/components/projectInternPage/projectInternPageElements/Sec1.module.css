@@ -1,0 +1,129 @@
+.container {
+  width: 100%;
+  display: flex;
+  margin-top: 6rem;
+  font-family: "Menlo";
+}
+
+.maincontainer {
+  width: 75%;
+  margin: auto;
+}
+
+.left {
+  width: 50%;
+  min-height: 100%;
+  padding-right: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 1.25rem;
+}
+
+.apply {
+  margin: 3%;
+  margin: 1rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  width: 10rem;
+  height: 3rem;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Menlo";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.apply:hover {
+  cursor: pointer;
+}
+
+.right {
+  width: 50%;
+  padding-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 39.25rem;
+  height: 26.25rem;
+}
+
+@media (max-width: 1550px) {
+  .maincontainer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1350px) {
+  .maincontainer {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 2.3rem;
+  }
+
+  .content {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .image {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .apply {
+    width: max-content;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .container {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .right {
+    display: none;
+  }
+  .left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .maincontainer {
+    width: 95%;
+    margin: 0 2.5%;
+    position: relative;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+}

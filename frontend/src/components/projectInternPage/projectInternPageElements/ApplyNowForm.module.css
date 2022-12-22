@@ -1,0 +1,163 @@
+@keyframes conatinerTransform {
+  from {
+    display: none;
+    transform: scale(0%);
+  }
+
+  to {
+    display: flex;
+    transform: scale(100%);
+  }
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: conatinerTransform 0.25s;
+  z-index: 10;
+  font-family: "Menlo";
+}
+
+.formContainer {
+  width: 35%;
+  height: 60%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.header {
+  width: 100%;
+  height: 28%;
+  background-color: red;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.sucesscard {
+  width: 25%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  position: relative;
+}
+
+.msg {
+  font-size: 25px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.content {
+  font-size: 1.5rem;
+}
+
+.xbtn {
+  margin: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.xbtn:hover {
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.input {
+  width: 70%;
+  height: 2.5rem;
+  margin: 3% 0;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.submit {
+  color: white;
+  background-color: red;
+  border: none;
+  width: 20%;
+  height: 3rem;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1250px) {
+  .formContainer {
+    width: 60%;
+  }
+
+  .sucesscard {
+    width: 60%;
+  }
+}
+
+@media (max-width: 720px) {
+  .formContainer {
+    width: 80%;
+  }
+
+  .sucesscard {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .formContainer {
+    width: 90%;
+    height: 55%;
+  }
+  .sucesscard {
+    width: 90%;
+  }
+
+  .form {
+    height: 55%;
+  }
+
+  .content {
+    font-size: 1.2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}

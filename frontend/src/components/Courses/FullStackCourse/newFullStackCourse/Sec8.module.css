@@ -1,0 +1,84 @@
+.container {
+  width: 100%;
+  font-family: Menlo, serif;
+  margin-top: 6rem;
+}
+
+.cardContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  margin: 1rem;
+  text-align: center;
+}
+
+.title {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.desp {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.redborder {
+  width: 90%;
+  border: 1px solid red;
+  margin: auto;
+}
+
+.map {
+  background: url("./images/mappin.svg");
+  margin: 1rem;
+  width: 5rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.team {
+  background: url("./images/team.svg");
+  margin: 1rem;
+  width: 5rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.calender {
+  background: url("./images/calendar.svg");
+  margin: 1rem;
+  width: 5rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.project {
+  background: url("./images/proj.svg");
+  margin: 1rem;
+  width: 5rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mode {
+  background: url("./images/mode.svg");
+  margin: 1rem;
+  width: 5rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

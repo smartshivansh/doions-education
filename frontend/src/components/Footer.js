@@ -2,6 +2,8 @@ import React from "react";
 
 import { AiFillFacebook, AiFillInstagram, AiFillPhone } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
+
+import mytysvg from "./Images/myty.svg";
 function Footer() {
   return (
     <div className="">
@@ -62,6 +64,13 @@ function Footer() {
                 target="blank"
               >
                 <AiFillInstagram size={70} />
+              </a>
+              <a href="https://doionseducation.myty.in/" target="blank">
+                <img
+                  src={mytysvg}
+                  alt="myty"
+                  style={{ width: "3rem", height: "3rem", margin: "1rem" }}
+                />
               </a>
             </div>
           </Col>

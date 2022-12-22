@@ -1,38 +1,95 @@
-import React, { useState } from "react";
-import Logo from "./Logo";
-import Navigation from "./Navigation";
-import { Container, Navbar } from "react-bootstrap";
-import { Outlet } from "react-router-dom";
-import MenuBtn from "./Button/MenuBtn";
+import classes from "./Navigation.module.css";
+import logo from "./Images/doionslogo.svg";
+import { useState } from "react";
+import xbtn from "./projectInternPage/Images/X.svg";
+import { useNavigate } from "react-router";
 
 function Header() {
-  const [expand, setExpand] = useState(false);
-  const changeIcon = (e) => {
-    setExpand(e);
+  const [sidebarTransform, setSidebarTransfrom] = useState("110");
+  const [sidebarDisplay, setSidebarDisplay] = useState(false);
+  const [iconDisplay, setIconDisplay] = useState(null);
+  const navigate = useNavigate();
+
+  const sidebarDisplayHandler = () => {
+    setSidebarDisplay((pre) => !pre);
+
+    if (!sidebarDisplay) {
+      setSidebarTransfrom("0");
+      setIconDisplay("none");
+    } else {
+      setSidebarTransfrom("110");
+      setIconDisplay("block");
+    }
   };
 
   return (
-    <>
-      <Navbar expand="lg" bg="white" variant="light" onToggle={changeIcon}>
-        <Container className="pt-0 pt-md-5 mt-0 mt-md-5">
-          <div className="d-flex justify-content-center col-6">
-            <Navbar.Brand href="/">
-              <Logo />
-            </Navbar.Brand>
-          </div>
-          <Navbar.Toggle
-            aria-controls="responsive-navbar-nav"
-            className="tog navToggle "
-          >
-            <MenuBtn expand={expand} />
-          </Navbar.Toggle>
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Navigation />
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      <Outlet />
-    </>
+    <div className={classes.container}>
+      <div
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        <img className={classes.image} src={logo} alt="logo" />
+      </div>
+      <div className={classes.navbar}>
+        <a href="/projectintern" className={classes.navitem}>
+          Join as a project Intern
+        </a>
+        <a href="https://doionseducation.myty.in/" className={classes.navitem}>
+          Blog
+        </a>
+        <a href="#ContactUs" className={classes.navitem}>
+          Contact Us
+        </a>
+      </div>
+      <div
+        className={classes.sideicon}
+        onClick={sidebarDisplayHandler}
+        style={{ display: iconDisplay }}
+      >
+        <div className={classes.sideiconimg}></div>
+      </div>
+
+      {/* //designingsidebar */}
+
+      <div
+        className={classes.sidebar}
+        style={{
+          transform: `translateX(${sidebarTransform}%)`,
+          transition: "1s",
+        }}
+      >
+        <div className={classes.xbtn}>
+          <img
+            src={xbtn}
+            alt="imag"
+            className={classes.image}
+            onClick={sidebarDisplayHandler}
+          />
+        </div>
+        <a
+          href="/projectintern"
+          className={classes.sidebaritem}
+          style={{ color: "white" }}
+        >
+          Join as a project Intern
+        </a>
+        <a
+          href="https://doionseducation.myty.in/"
+          className={classes.sidebaritem}
+          style={{ color: "white" }}
+        >
+          Blog
+        </a>
+        <a
+          href="#ContactUs"
+          className={classes.sidebaritem}
+          style={{ color: "white" }}
+        >
+          Contact Us
+        </a>
+      </div>
+    </div>
   );
 }
 

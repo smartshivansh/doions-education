@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
+  margin: 6rem 0;
+  font-family: Menlo, serif;
+}
+
+.heading {
+  text-align: left;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.cardContainer {
+  width: 100%;
+  padding: 2% 0;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  height: 100%;
+  width: 18%;
+  min-width: 16rem;
+  min-height: 20rem;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1%;
+  margin: 1rem;
+  border-radius: 3px;
+}
+
+.desp {
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 7rem;
+  text-align: center;
+  display: flex;
+}
+
+.c1 {
+  background: url("./images/classroom.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 4.5rem;
+  min-height: 3.75rem;
+  height: 30%;
+}
+
+.c2 {
+  background: url("./images/group.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 4rem;
+  min-height: 5rem;
+  width: 30%;
+  height: 30%;
+}
+
+.c3 {
+  background: url("./images/bulb.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 3.75rem;
+  min-height: 4rem;
+  width: 30%;
+  height: 30%;
+}
+
+.c4 {
+  background: url("./images/project.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 3.75rem;
+  min-height: 4rem;
+  width: 30%;
+  height: 30%;
+}
+
+@media (max-width: 980px) {
+  .container {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  .subHeading {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}

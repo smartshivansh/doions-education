@@ -1,0 +1,125 @@
+.container {
+  width: 100%;
+  margin: auto;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Menlo";
+}
+
+.sideicon {
+  display: none;
+}
+
+.sideicon:hover {
+  cursor: pointer;
+}
+
+.sideiconimg {
+  width: 100%;
+  height: 100%;
+  background: url("./projectInternPage/Images/menu.svg");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image {
+  width: 100%;
+  height: 6rem;
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  width: 50%;
+  min-width: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navitem {
+  font-size: 1.5rem;
+  margin: auto 1rem;
+}
+
+.navitem:hover {
+  cursor: pointer;
+}
+
+.sidebar {
+  /* transform: translateX(-110%); */
+  position: fixed;
+  height: max-content;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.75);
+  right: 0;
+  top: 2rem;
+  padding: 1rem;
+}
+
+.sidebaritem {
+  font-size: 1.8rem;
+  margin: 1rem;
+  display: block;
+  color: white;
+}
+
+.xbtn {
+  margin: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1rem;
+}
+
+.xbtn:hover {
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1125px) {
+  .navbar {
+    width: 60%;
+  }
+}
+
+@media (max-width: 950px) {
+  .navbar {
+    width: 70%;
+  }
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    display: none;
+  }
+
+  .sideicon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .image {
+    width: 6rem;
+  }
+}

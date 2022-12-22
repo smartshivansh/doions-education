@@ -8,21 +8,24 @@ import Footer from "./components/Footer";
 import Courses from "./components/Courses/AllCourses/AllCourse";
 import FullStack from "./components/Courses/FullStackCourse/FullStackCourse";
 import DigitalMarketing from "./components/Courses/DigitalMarketingCourse/DigitalMarketingCourse";
+import ProjectInternPage from "./components/projectInternPage/ProjectInternPage";
 import "./App.css";
 import ScrollToTop from "./components/ScrollToTop";
+
+import ApplyNowForm from "./components/projectInternPage/projectInternPageElements/ApplyNowForm";
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Header />}>
-          <Route index element={<Home />} />
-          <Route path="/Courses" element={<Courses />} />
-          <Route path="/FullStack" element={<FullStack />} />
-          <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
+        <Route path="/" element={<FullStack />} />
+        {/*<Route path="/Courses" element={<Courses />} />
+           <Route path="/FullStack" element={<FullStack />} />
+          <Route path="/DigitalMarketing" element={<DigitalMarketing />} /> */}
+        <Route path="/projectintern" element={<ProjectInternPage />} />
+        <Route path="*" element={<NoPage />} />
+        <Route path="/test" element={<ApplyNowForm />} />
       </Routes>
 
       <Footer />

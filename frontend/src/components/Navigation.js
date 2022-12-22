@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 function Navigation() {
   return (
     <>
-      <Nav className="ms-auto">
+      <Nav className="ms-auto" style={{ width: "max-content" }}>
         <Link
-          to="/Courses"
+          to="/projectintern"
           className="mx-5 nav-link text-dark navStyle fw-bold"
         >
-          Courses
+          Join as project intern
         </Link>
         <a
           href=" https://doionseducation.myty.in/"
