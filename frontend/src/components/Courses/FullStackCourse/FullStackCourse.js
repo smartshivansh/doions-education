@@ -20,6 +20,7 @@ import Sec9 from "./newFullStackCourse/Sec9";
 import Sec10 from "./newFullStackCourse/Sec10";
 
 import ContactUs from "../../ContactUS/ContactUs";
+
 function index() {
   return (
     <div className={classes.fullstackcontainer}>
@@ -33,8 +34,9 @@ function index() {
       <Sec7 />
       <Sec8 />
       <Sec9 />
-      <Sec10 />
-      <ContactUs />
+      <div id="ContactUs">
+        <Sec10 />
+      </div>
     </div>
   );
 }

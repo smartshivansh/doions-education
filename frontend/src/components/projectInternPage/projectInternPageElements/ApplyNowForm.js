@@ -4,6 +4,8 @@ import classes from "./ApplyNowForm.module.css";
 import xbtn from "../Images/X.svg";
 import xbtnred from "../Images/xbtnred.svg";
 
+import Spinner from "../../Spinner/Spinner";
+
 const ApplyNowForm = (props) => {
   const [display, setDisplay] = useState("none");
   const [name, setName] = useState("");
@@ -11,9 +13,12 @@ const ApplyNowForm = (props) => {
   const [mobile, setMobile] = useState("");
   const [file, setFile] = useState();
   const [sucess, setSucess] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   function displayHandler() {
     setDisplay("none");
+    setSucess(false);
+    setName("");
     props.onclick();
   }
 
@@ -36,16 +41,20 @@ const ApplyNowForm = (props) => {
   function formSubmitHandler(e) {
     e.preventDefault();
 
+    setLoading(true);
+
     if (name.length < 1) {
       alert("Please enter a valid name");
+      setLoading(false);
       return;
     } else if (mobile.length !== 10) {
       alert("Please enter a valid Mobile No");
+      setLoading(false);
       return;
     }
-
+    //https://www.education.doions.com
     try {
-      fetch("http://localhost:5000/api/projintern", {
+      fetch("https://www.education.doions.com/api/projintern", {
         method: "POST",
         body: JSON.stringify({ name, email, mobile }),
         headers: {
@@ -58,14 +67,19 @@ const ApplyNowForm = (props) => {
           if (data.sucess) {
             const resume = new FormData();
             resume.append("resume", file);
-            fetch("http://localhost:5000/api/resume", {
+            fetch("https://www.education.doions.com/api/resume", {
               method: "POST",
               body: resume,
             })
               .then((response) => response.json())
               .then((data) => {
+                data = JSON.parse(data);
                 if (data.sucess) {
+                  setLoading(false);
                   setSucess(true);
+                  setFile("");
+                  setEmail("");
+                  setMobile("");
                 }
               });
           }
@@ -73,6 +87,13 @@ const ApplyNowForm = (props) => {
     } catch (err) {
       console.log(err);
     }
+
+    setTimeout(() => {
+      if (loading) {
+        setLoading(false);
+        alert("some error occoured please try again later");
+      }
+    }, 4000);
   }
 
   useEffect(() => {
@@ -85,6 +106,7 @@ const ApplyNowForm = (props) => {
 
   return (
     <div className={classes.container} style={{ display: display }}>
+      {loading && <Spinner />}
       {sucess && (
         <div className={classes.sucesscard}>
           <div className={classes.xbtn}>
@@ -104,7 +126,6 @@ const ApplyNowForm = (props) => {
         <div className={classes.formContainer}>
           <div className={classes.header}>
             <p className={classes.heading}>APPLY FOR</p>
-            <p className={classes.content}>Project Internship Program</p>
             <div className={classes.xbtn}>
               {" "}
               <img
@@ -115,7 +136,7 @@ const ApplyNowForm = (props) => {
               />
             </div>
           </div>
-          (
+
           <form
             className={classes.form}
             onSubmit={formSubmitHandler}
@@ -150,6 +171,7 @@ const ApplyNowForm = (props) => {
               accept=".pdf"
               type="file"
               className={classes.input}
+              style={{ padding: "0" }}
               onChange={fileChangeHandler}
               required
             />

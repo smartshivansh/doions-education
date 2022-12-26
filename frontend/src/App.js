@@ -25,9 +25,7 @@ function App() {
           <Route path="/DigitalMarketing" element={<DigitalMarketing />} /> */}
         <Route path="/projectintern" element={<ProjectInternPage />} />
         <Route path="*" element={<NoPage />} />
-        <Route path="/test" element={<ApplyNowForm />} />
       </Routes>
-
       <Footer />
     </BrowserRouter>
   );

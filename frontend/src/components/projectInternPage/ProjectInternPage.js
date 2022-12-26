@@ -17,7 +17,9 @@ const ProjectInternPage = () => {
       <Sec3 />
       <Sec4 />
       <Sec5 />
-      <ContactUs />
+      <div id="ContactUs">
+        <ContactUs />
+      </div>
     </div>
   );
 };

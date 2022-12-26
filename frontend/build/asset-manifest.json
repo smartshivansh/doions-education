@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.9312e5ae.css",
-    "main.js": "/static/js/main.db3e6432.js",
+    "main.css": "/static/css/main.40878b57.css",
+    "main.js": "/static/js/main.25eed3b8.js",
     "static/js/787.f4e2902d.chunk.js": "/static/js/787.f4e2902d.chunk.js",
     "static/media/imgFour.JPG": "/static/media/imgFour.2d4d9ab20700a6954044.JPG",
     "static/media/imgThree.JPG": "/static/media/imgThree.8c42ed8c7be89083c6ae.JPG",
     "static/media/group.JPG": "/static/media/group.c14ae3c1a32f1d38d6b4.JPG",
     "static/media/fullstack.pdf": "/static/media/fullstack.699844db41d358b78920.pdf",
-    "static/media/raviraj.JPG": "/static/media/raviraj.3e6a1d18dfff68b00a8a.JPG",
     "static/media/shivani.JPG": "/static/media/shivani.4d515e0a1d81013a24d8.JPG",
     "static/media/imgOne.png": "/static/media/imgOne.efcaad818320d3963e22.png",
+    "static/media/raviraj.JPG": "/static/media/raviraj.5dfdb2c1e63b48c7e364.JPG",
     "static/media/Menlo-Regular.ttf": "/static/media/Menlo-Regular.92e41f43900c256f2286.ttf",
     "static/media/anurag.png": "/static/media/anurag.6155a6b9d340fd875728.png",
     "static/media/imgFive.png": "/static/media/imgFive.4e365dd91aae5822e28b.png",
@@ -46,12 +46,12 @@
     "static/media/myty.svg": "/static/media/myty.7c312fe3a0c71f46aba7ca5f90c4c7f7.svg",
     "static/media/menu.svg": "/static/media/menu.cf7b65cb38bf2ac941f0.svg",
     "static/media/X.svg": "/static/media/X.9d1c0d113b1c308742e7e012c0d4c95d.svg",
-    "main.9312e5ae.css.map": "/static/css/main.9312e5ae.css.map",
-    "main.db3e6432.js.map": "/static/js/main.db3e6432.js.map",
+    "main.40878b57.css.map": "/static/css/main.40878b57.css.map",
+    "main.25eed3b8.js.map": "/static/js/main.25eed3b8.js.map",
     "787.f4e2902d.chunk.js.map": "/static/js/787.f4e2902d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9312e5ae.css",
-    "static/js/main.db3e6432.js"
+    "static/css/main.40878b57.css",
+    "static/js/main.25eed3b8.js"
   ]
 }

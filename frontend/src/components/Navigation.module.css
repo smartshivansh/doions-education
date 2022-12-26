@@ -55,6 +55,7 @@
   position: fixed;
   height: max-content;
   width: max-content;
+  max-width: 90%;
   background-color: rgba(0, 0, 0, 0.75);
   right: 0;
   top: 2rem;
@@ -95,15 +96,13 @@
   .navbar {
     width: 60%;
   }
-}
 
-@media (max-width: 950px) {
-  .navbar {
-    width: 70%;
+  .navitem {
+    font-size: 1.3rem;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1050px) {
   .navbar {
     display: none;
   }
@@ -115,6 +114,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .navbar {
+    width: 70%;
+  }
+}
+
+@media (max-width: 650px) {
+  .sidebaritem {
+    font-size: 1.3rem;
   }
 }
 

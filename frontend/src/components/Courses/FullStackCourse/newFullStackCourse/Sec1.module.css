@@ -32,7 +32,7 @@
 }
 
 .heading {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
@@ -115,9 +115,6 @@
   .heading {
     font-size: 2.8rem;
   }
-}
-
-@media (max-width: 1350px) {
   .fullstackcontainer {
     width: 90%;
     margin: auto;

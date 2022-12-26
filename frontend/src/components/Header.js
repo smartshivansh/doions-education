@@ -38,7 +38,11 @@ function Header() {
         <a href="https://doionseducation.myty.in/" className={classes.navitem}>
           Blog
         </a>
-        <a href="#ContactUs" className={classes.navitem}>
+        <a
+          href="#ContactUs"
+          className={classes.navitem}
+          style={{ marginRight: "0" }}
+        >
           Contact Us
         </a>
       </div>
@@ -56,7 +60,7 @@ function Header() {
         className={classes.sidebar}
         style={{
           transform: `translateX(${sidebarTransform}%)`,
-          transition: "1s",
+          transition: "0.25s",
         }}
       >
         <div className={classes.xbtn}>

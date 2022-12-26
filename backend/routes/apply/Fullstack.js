@@ -5,7 +5,6 @@ const FullStack = new Schema({
   email: {
     type: String,
     required: true,
-    unique: true,
   },
   name: {
     type: String,

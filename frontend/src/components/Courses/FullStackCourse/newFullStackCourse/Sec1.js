@@ -23,10 +23,10 @@ const Sec1 = () => {
         </h1>
         <div>
           <p className={classes.text}>
-            A 12-week self-dedicated, project based learning program to help you
+            A 12-week self-directed, project based learning program to help you
             get into a entry-level software developer job!
           </p>
-          <p className={classes.startDate}>Strating from 1st january 2023.</p>
+          <p className={classes.startDate}>Strating from 1st January 2023.</p>
         </div>
         <div className={classes.apply}>
           <div className={classes.applybtn} onClick={formShowHandler}>

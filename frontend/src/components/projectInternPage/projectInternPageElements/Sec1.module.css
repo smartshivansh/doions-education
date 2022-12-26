@@ -21,6 +21,7 @@
 
 .heading {
   font-size: 3rem;
+  line-height: 1.2;
   font-weight: 700;
 }
 
@@ -69,6 +70,15 @@
   .maincontainer {
     width: 80%;
   }
+
+  .heading {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .content {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -76,8 +86,9 @@
 
 @media (max-width: 1350px) {
   .maincontainer {
-    width: 90%;
+    width: 100%;
     margin: auto;
+    padding: 2%;
   }
 }
 

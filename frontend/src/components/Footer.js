@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import mytysvg from "./Images/myty.svg";
 function Footer() {
   return (
-    <div className="">
+    <div style={{ position: "absolute", width: "100%", left: "0" }}>
       <div className="position-fixed bottom-0 end-0">
         <span className="m-2 btn rounded-circle bg-danger p-4 text-center">
           <a href="tel:+919329722268" className="h1 text-white mx-1 ">

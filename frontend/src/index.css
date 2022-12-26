@@ -7,6 +7,11 @@
   -moz-osx-font-smoothing: grayscale;
 } */
 
+html {
+  max-width: 1650px;
+  margin: auto;
+}
+
 @font-face {
   font-family: "Menlo";
   src: local("Menlo"),

@@ -31,9 +31,10 @@ const resumeStorage = multer.diskStorage({
 app.use(multer({ storage: resumeStorage }).single("resume"));
 
 const allowlist = [
-  "http://localhost:3000",
+  "http://localhost:3002",
   "https://doionsed.herokuapp.com",
   "https://www.education.doions.com/",
+  "https://9d77-2405-201-3023-300c-95c0-559b-b188-bb15.ngrok.io/",
 ];
 const corsOptionsDelegate = function (req, callback) {
   let corsOptions;
@@ -48,13 +49,10 @@ const corsOptionsDelegate = function (req, callback) {
 app.use(cors());
 
 try {
-  const db = mongoose.connect(
-    "mongodb+srv://doed:57GR4nYAoS9qKBJ3@cluster0.4st2dnj.mongodb.net/test",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  );
+  const db = mongoose.connect(process.env.MONGO_BD_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 } catch (err) {
   console.log("not connected" + err.message);
 }
@@ -74,53 +72,53 @@ const transport = nodemailer.createTransport({
 
 app.use("/api", require("./routes/index"));
 
-app.post("/api/projintern", (req, res) => {
-  const { name, email, mobile } = req.body;
-  const user = ProjectIntern.create({
-    name,
-    email,
-    mobile,
-  });
-  if (user) {
-    res
-      .status(200)
-      .json(JSON.stringify({ sucess: true, msg: "user added successfully" }));
-  } else {
-    res
-      .status(200)
-      .json(JSON.stringify({ sucess: false, msg: "invalid input" }));
-  }
-});
+// app.post("/api/projintern", (req, res) => {
+//   const { name, email, mobile } = req.body;
+//   const user = ProjectIntern.create({
+//     name,
+//     email,
+//     mobile,
+//   });
+//   if (user) {
+//     res
+//       .status(200)
+//       .json(JSON.stringify({ sucess: true, msg: "user added successfully" }));
+//   } else {
+//     res
+//       .status(200)
+//       .json(JSON.stringify({ sucess: false, msg: "invalid input" }));
+//   }
+// });
 
-app.post("/api/resume", (req, res) => {
-  const mailOptions = {
-    from: "in@myty.in",
-    to: "shivani.ahirvar@doions.com",
-    subject: "new application for project intern",
-    text: "New response for project intern has been received",
-    attachments: [
-      {
-        content: req.file,
-        filename: req.file.filename,
-        type: "application/pdf",
-        disposition: "attachment",
-      },
-    ],
-  };
+// app.post("/api/resume", (req, res) => {
+//   const mailOptions = {
+//     from: "in@myty.in",
+//     to: "shivani.ahirvar@doions.com",
+//     subject: "new application for project intern",
+//     text: "New response for project intern has been received",
+//     attachments: [
+//       {
+//         content: req.file,
+//         filename: req.file.filename,
+//         type: "application/pdf",
+//         disposition: "attachment",
+//       },
+//     ],
+//   };
 
-  transport.sendMail(mailOptions, (err, info) => {
-    if (err) {
-      console.log(1111, err);
-    } else {
-      res
-        .status(200)
-        .json(
-          JSON.stringify({ message: "email send sucessfully", sucess: true })
-        );
-      return;
-    }
-  });
-});
+//   transport.sendMail(mailOptions, (err, info) => {
+//     if (err) {
+//       console.log(1111, err);
+//     } else {
+//       res
+//         .status(200)
+//         .json(
+//           JSON.stringify({ message: "email send sucessfully", sucess: true })
+//         );
+//       return;
+//     }
+//   });
+// });
 
 app.use(express.static("../frontend/build"));
 // sending build file to client
@@ -134,8 +132,8 @@ try {
   console.log(error.message);
 }
 
-app.listen(5000, () => {
-  console.log("server is listening to port 5000");
+app.listen(3002, () => {
+  console.log("server is listening to port 3002");
 });
 
 module.exports = app;
