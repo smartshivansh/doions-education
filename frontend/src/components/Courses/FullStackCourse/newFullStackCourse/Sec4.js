@@ -5,7 +5,7 @@ const Sec4 = () => {
   return (
     <div className={classes.container}>
       <h1 className={classes.heading}>
-        Activities on Weekly-Basis (Total 75hour)
+        Activities on Weekly-Basis (Total 75 hours)
       </h1>
       <div className={classes.cardContainer}>
         <div className={classes.card}>
