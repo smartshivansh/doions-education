@@ -7,9 +7,9 @@ const Sec4 = () => {
     <div className={classes.container}>
       <p className={classes.heading}>How does this work?</p>
       <p className={classes.content}>
-        As a project Intern, you get to work in the above mentioned domains of
+        As a Project Intern, you get to work in the above mentioned domains of
         your choice. There are certain criteria's that you need to fullfil
-        before getting into the program. This program is initiated to provide
+        before getting into this program. This program is initiated to provide
         support to individuals who are trying to follow their passion and wish
         to create a carrer out of it.
       </p>
@@ -25,7 +25,7 @@ const Sec4 = () => {
         </li>
         <li className={classes.listitem}>Flexible work timings.</li>
         <li className={classes.listitem}>
-          Prefrence will be given to those who have done some kind of work on
+          Prefrence will be given to those who have done some kind of work or
           projects (self-directed or motivated) previously in these domains.
         </li>
         <li className={classes.listitem}>

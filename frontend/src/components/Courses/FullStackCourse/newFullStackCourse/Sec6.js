@@ -19,8 +19,8 @@ const Sec6 = () => {
           industry standards.
         </li>
         <li className={classes.listitem}>
-          <span className={classes.right}></span>Experience working in corporate
-          setup.
+          <span className={classes.right}></span>Experience working in a
+          corporate setup.
         </li>
 
         <li className={classes.subHeading}>Know more about Locallearn</li>

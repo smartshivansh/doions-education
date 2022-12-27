@@ -10,19 +10,13 @@ const Sec8 = () => {
         <div className={classes.card}>
           <div className={classes.map}></div>
           <p className={classes.title}>LOCATION</p>
-          <p className={classes.desp}>
-            it is an offline program will be conducted at DOIONS premises,
-            Jablpur
-          </p>
+          <p className={classes.desp}>At doions premises, Jabalpur</p>
         </div>
 
         <div className={classes.card}>
           <div className={classes.mode}></div>
           <p className={classes.title}>MODE</p>
-          <p className={classes.desp}>
-            it is an offline program will be conducted at DOIONS premises,
-            Jablpur
-          </p>
+          <p className={classes.desp}>offline</p>
         </div>
 
         <div className={classes.card}>
@@ -43,7 +37,7 @@ const Sec8 = () => {
           <div className={classes.project}></div>
           <p className={classes.title}>LIVE PROJECT</p>
           <p className={classes.desp}>
-            Locallearn a co-learning platform for self-learning
+            Locallearn, A co-learning platform for self-learning
           </p>
         </div>
       </div>

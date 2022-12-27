@@ -16,12 +16,12 @@ const Sec1 = () => {
       <ApplyNowForm show={showForm} onclick={showFormHandler} />
       <div className={classes.left}>
         <p className={classes.heading}>
-          Want to turn your passion into a carrer? Then join us a project
+          Want to turn your passion into a career? Then join us as a project
           intern!
         </p>
         <p className={classes.content}>
           An exclusive opportunity for those who want to follow their passion
-          and upgrade your skills! (For both tech and non-tech roles)
+          and upgrade your skills!(For both tech and non-tech roles)
         </p>
         <div className={classes.apply} onClick={showFormHandler}>
           Apply Now

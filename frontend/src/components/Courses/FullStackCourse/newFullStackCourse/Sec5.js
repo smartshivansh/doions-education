@@ -13,24 +13,30 @@ const Sec5 = () => {
       <h1 className={classes.heading}>About Instructor</h1>
       <div className={classes.container}>
         <p className={classes.hidden}>
-          The program will be led by Anurag Jain who is a software engineer by
-          education and passionate about creating software products that are
-          capable of solving some real-world problems, along with his team of
-          experts Shiv dutt Choubey, Shivansh Shrivastava and Ravirag choudhary.
+          The program will be led by Anurag Jain who is an entrepreneur & a
+          software engineer by education and passionate about creating software
+          products that are capable of solving some real-world problems, along
+          with his team of experts Shiv Dutt Choubey, Shivansh Shrivastav and
+          Raviraj Choudhary.
         </p>
         <div className={classes.left}>
           <div className={classes.displayed}>
-            The program will be led by Anurag Jain who is a software engineer by
-            education and passionate about creating software products that are
-            capable of solving some real-world problems, along with his team of
-            experts Shiv dutt Choubey, Shivansh Shrivastava and Ravirag
-            choudhary.
+            The program will be led by Anurag Jain who is an entrepreneur & a
+            software engineer by education and passionate about creating
+            software products that are capable of solving some real-world
+            problems, along with his team of experts Shiv Dutt Choubey, Shivansh
+            Shrivastav and Raviraj Choudhary.
           </div>
 
           <div className={classes.cardContainer}>
             <div className={classes.card}>
+              <img className={classes.image} src={shivdutt} alt="imag" />
+              <p className={classes.name}>Shiv Dutt Choubey</p>
+              <p className={classes.roll}>Expertise- Python, AI, backend</p>
+            </div>
+            <div className={classes.card}>
               <img className={classes.image} src={shivansh} alt="imag" />
-              <p className={classes.name}>shivansh shrivastava</p>
+              <p className={classes.name}>Shivansh Shrivastava</p>
               <p className={classes.roll}>Expertise- Full stack development</p>
             </div>
             <div className={classes.card}>
@@ -39,11 +45,6 @@ const Sec5 = () => {
               <p className={classes.roll}>
                 Expertise- Backend & App development
               </p>
-            </div>
-            <div className={classes.card}>
-              <img className={classes.image} src={shivdutt} alt="imag" />
-              <p className={classes.name}>Shiv Dutt Choubey</p>
-              <p className={classes.roll}>Expertise- Python, AI, backend</p>
             </div>
           </div>
         </div>

@@ -7,7 +7,9 @@ import ContactUs from "../../../ContactUS/ContactUs";
 const Sec10 = () => {
   return (
     <div className={classes.container}>
-      <h1>Any questions? Just Ask! We'll be happy to answer you</h1>
+      <h1 style={{ fontWeight: "1800" }}>
+        Any questions? Just Ask! We'll be happy to answer
+      </h1>
       <p>
         Let's have a commitment-free conversation and get to know more about it.
       </p>

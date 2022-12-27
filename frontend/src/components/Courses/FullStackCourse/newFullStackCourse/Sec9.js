@@ -13,23 +13,21 @@ const Sec9 = () => {
   return (
     <div className={classes.container}>
       <ApplyNowFormFullStack show={show} onclick={formShowHandler} />
-      <h1 className={classes.heading}>Who CAN and SHOULD take this course?</h1>
+      <h1 className={classes.heading}>Who CAN or SHOULD take this course?</h1>
       <ul className={classes.list}>
         <li className={classes.listitem}>
-          Anyone who is curious about programming with no prior experiense
-          required.
-        </li>
-        <li className={classes.listitem}>Entrepreneurs and Hobbyists.</li>
-        <li className={classes.listitem}>
-          Anyone who wants to start contribute in Live Projects.
+          Students who are passionate about creating a career in software
+          development.
         </li>
         <li className={classes.listitem}>
-          One who wants to gain real Coding World Experiense.
+          People who wish to transition their career into programming.
         </li>
         <li className={classes.listitem}>
-          One who is interested in Web and Live Project Development
+          Anyone who wants to get an experience working on Live Projects.
         </li>
-        <li className={classes.listitem}>Students and serious-coders.</li>
+        <li className={classes.listitem}>
+          Women who wish to re-start their career
+        </li>
       </ul>
       <div className={classes.applybtn} onClick={formShowHandler}>
         Apply Now

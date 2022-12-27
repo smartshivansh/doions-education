@@ -13,14 +13,14 @@ const Sec2 = () => {
       </p>
       <ul className={classes.list}>
         <li className={classes.listitem}>
-          1. Tech- Web development, App development
+          1. Tech- Web development, App development.
         </li>
-        <li className={classes.listitem}>2. Content</li>
+        <li className={classes.listitem}>2. Content.</li>
         <li className={classes.listitem}>
-          3. Design- Graphic design, UI/UX design
+          3. Design- Graphic design, UI/UX design.
         </li>
         <li className={classes.listitem}>
-          4. Sales & Marketing. AI and Data science
+          4. Sales & Marketing. AI and Data science.
         </li>
       </ul>
     </div>

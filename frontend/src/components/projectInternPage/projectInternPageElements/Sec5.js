@@ -6,7 +6,7 @@ const Sec5 = () => {
   return (
     <div className={classes.container}>
       <p className={classes.heading}>
-        Qny questions? just Ask!
+        Any questions? just Ask!
         <br />
         We'll be happy to answer
       </p>

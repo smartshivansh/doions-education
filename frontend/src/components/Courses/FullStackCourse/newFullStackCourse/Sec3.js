@@ -9,15 +9,15 @@ const Sec3 = () => {
     <div className={classes.container}>
       <h1 className={classes.title}>Designed for an absolute BEGINNER</h1>
 
-      <p className={classes.content}>
+      {/* <p className={classes.content}>
         <span className={classes.rights}></span>Provide Basic idea of coding
-      </p>
+      </p> */}
       <p className={classes.content}>
         <span className={classes.rights}></span>Basics of Web development.
       </p>
       <p className={classes.content}>
-        <span className={classes.rights}></span>Understanding New age
-        technologies like React, Express, cloud and AI.
+        <span className={classes.rights}></span>Understanding of New age
+        technologies like React, Express, Cloud and AI.
       </p>
       <p className={classes.content}>
         <span className={classes.rights}></span>
@@ -29,7 +29,7 @@ const Sec3 = () => {
       </p>
       <p className={classes.content}>
         <span className={classes.rights}></span>Programming fundamentals and
-        using Javascript and Python
+        using JavaScript and Python
       </p>
       <p className={classes.content}>
         <span className={classes.rights}></span>Basics of Data Science using
