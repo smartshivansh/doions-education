@@ -10,7 +10,7 @@ const Sec8 = () => {
         <div className={classes.card}>
           <div className={classes.map}></div>
           <p className={classes.title}>LOCATION</p>
-          <p className={classes.desp}>At doions premises, Jabalpur</p>
+          <p className={classes.desp}>At Doions premises, Jabalpur</p>
         </div>
 
         <div className={classes.card}>
@@ -29,7 +29,7 @@ const Sec8 = () => {
           <div className={classes.calender}></div>
           <p className={classes.title}>START SCHEDULE</p>
           <p className={classes.desp}>
-            The batch eill start fo 1st January 2023
+            The batch will start from 1st January 2023
           </p>
         </div>
 

@@ -5,7 +5,7 @@ import classes from "./Sec6.module.css";
 const Sec6 = () => {
   return (
     <div className={classes.container}>
-      <h1 className={classes.heading}>YOU WILL GET</h1>
+      <h1 className={classes.heading}>You Will Get</h1>
       <ul className={classes.list}>
         <li className={classes.listitem}>
           <span className={classes.right}></span>A certificate of completion.

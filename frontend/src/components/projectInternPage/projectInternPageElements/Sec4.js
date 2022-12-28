@@ -11,7 +11,7 @@ const Sec4 = () => {
         your choice. There are certain criteria's that you need to fullfil
         before getting into this program. This program is initiated to provide
         support to individuals who are trying to follow their passion and wish
-        to create a carrer out of it.
+        to create a career out of it.
       </p>
       <ul>
         <li className={classes.listitem}>
@@ -25,7 +25,7 @@ const Sec4 = () => {
         </li>
         <li className={classes.listitem}>Flexible work timings.</li>
         <li className={classes.listitem}>
-          Prefrence will be given to those who have done some kind of work or
+          Preference will be given to those who have done some kind of work or
           projects (self-directed or motivated) previously in these domains.
         </li>
         <li className={classes.listitem}>

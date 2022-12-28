@@ -21,7 +21,7 @@ const Sec1 = () => {
         </p>
         <p className={classes.content}>
           An exclusive opportunity for those who want to follow their passion
-          and upgrade your skills!(For both tech and non-tech roles)
+          and upgrade their skills!(For both tech and non-tech roles)
         </p>
         <div className={classes.apply} onClick={showFormHandler}>
           Apply Now

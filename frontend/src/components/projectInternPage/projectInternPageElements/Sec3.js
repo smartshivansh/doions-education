@@ -16,17 +16,20 @@ const Sec3 = () => {
       <ul>
         <li className={classes.listitem}>
           You will get hands-on experience of working on a project that is going
-          to be a commercial product in future. Know more
+          to be a commercial product in future.{" "}
+          <a target="blank" href="doornextshop.com">
+            Know more
+          </a>
         </li>
         <li className={classes.listitem}>
           You’ll work with a team of experienced professionals that will help
           you improve your skills.
         </li>
         <li className={classes.listitem}>
-          elp you improve your skills. You’ll get an all-round learning
+          Help you improve your skills. You’ll get an all-round learning
           experience of working with a product-based start-up. Learn about
           latest technologies, develop soft skills, personality development etc.
-          and stand out among your peers and friends
+          and stand out among your peers and friends.
         </li>
         <li className={classes.listitem}>
           You’ll also get a certificate upon completion of the tenure.

@@ -20,7 +20,7 @@ const Sec2 = () => {
           3. Design- Graphic design, UI/UX design.
         </li>
         <li className={classes.listitem}>
-          4. Sales & Marketing. AI and Data science.
+          4. Sales & Marketing, AI and Data science.
         </li>
       </ul>
     </div>
