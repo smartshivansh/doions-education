@@ -4,6 +4,8 @@ import classes from "./ApplyNowForm.module.css";
 import xbtn from "../Images/X.svg";
 import xbtnred from "../Images/xbtnred.svg";
 
+import apis from "../../Constants";
+
 import Spinner from "../../Spinner/Spinner";
 
 const ApplyNowForm = (props) => {
@@ -54,7 +56,7 @@ const ApplyNowForm = (props) => {
     }
     //https://www.education.doions.com
     try {
-      fetch("http://localhost:3002/api/projintern", {
+      fetch(`${apis.projintern}`, {
         method: "POST",
         body: JSON.stringify({ name, email, mobile }),
         headers: {
@@ -67,7 +69,7 @@ const ApplyNowForm = (props) => {
           if (data.sucess) {
             const resume = new FormData();
             resume.append("resume", file);
-            fetch("http://localhost:3002/api/resume", {
+            fetch(`${apis.resume}`, {
               method: "POST",
               body: resume,
             })

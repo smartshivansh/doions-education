@@ -4,6 +4,8 @@ import classes from "./ContactUs.module.css";
 
 import Spinner from "../Spinner/Spinner";
 
+import apis from "../Constants";
+
 import xbtnred from "./Images/xbtnred.svg";
 
 function ContactUs() {
@@ -42,7 +44,7 @@ function ContactUs() {
     }
     setLoading(true);
 
-    fetch("http://localhost:3002/api/contactus", {
+    fetch(`${apis.contactUs}`, {
       method: "POST",
       body: JSON.stringify({ email, msg }),
       headers: {

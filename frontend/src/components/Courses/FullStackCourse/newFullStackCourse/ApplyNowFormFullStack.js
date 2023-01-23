@@ -6,6 +6,8 @@ import xbtnred from "./images/xbtnred.svg";
 
 import Spinner from "../../../Spinner/Spinner";
 
+import apis from "../../../Constants";
+
 const ApplyNowFormFullStack = (props) => {
   const [display, setDisplay] = useState("none");
   const [name, setName] = useState("");
@@ -48,7 +50,7 @@ const ApplyNowFormFullStack = (props) => {
     }
     //https://www.education.doions.com
     try {
-      fetch("https://www.education.doions.com/api/fullstack", {
+      fetch(`${apis.fullstack}`, {
         method: "POST",
         body: JSON.stringify({ name, email, mobile }),
         headers: {
