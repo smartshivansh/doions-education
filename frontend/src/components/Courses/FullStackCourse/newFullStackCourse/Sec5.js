@@ -10,7 +10,7 @@ import shivansh from "./images/shivansh.jpg";
 const Sec5 = () => {
   return (
     <div className={classes.main}>
-      <h1 className={classes.heading}>About Instructors</h1>
+      <h1 className={classes.heading}>About instructors</h1>
       <div className={classes.container}>
         <p className={classes.hidden}>
           The program will be led by Anurag Jain who is an entrepreneur & a

@@ -13,7 +13,7 @@ const Sec9 = () => {
   return (
     <div className={classes.container}>
       <ApplyNowFormFullStack show={show} onclick={formShowHandler} />
-      <h1 className={classes.heading}>Who CAN or SHOULD take this course?</h1>
+      <h1 className={classes.heading}>Who can or should take this course?</h1>
       <ul className={classes.list}>
         <li className={classes.listitem}>
           Students who are passionate about creating a career in software

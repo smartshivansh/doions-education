@@ -16,7 +16,7 @@ const Sec8 = () => {
         <div className={classes.card}>
           <div className={classes.mode}></div>
           <p className={classes.title}>MODE</p>
-          <p className={classes.desp}>offline</p>
+          <p className={classes.desp}>Offline</p>
         </div>
 
         <div className={classes.card}>
@@ -29,7 +29,7 @@ const Sec8 = () => {
           <div className={classes.calender}></div>
           <p className={classes.title}>START SCHEDULE</p>
           <p className={classes.desp}>
-            The batch will start from 1st January 2023
+            The batch will start from 1st February 2023
           </p>
         </div>
 

@@ -4,7 +4,7 @@ import "./Fonts/menlo-cufonfonts/Menlo-Regular.ttf";
 import Home from "./components/Home/Home";
 import Header from "./components/Header";
 import NoPage from "./components/NoPage/index";
-import Footer from "./components/Footer";
+import Footer from "./Footer";
 import Courses from "./components/Courses/AllCourses/AllCourse";
 import FullStack from "./components/Courses/FullStackCourse/FullStackCourse";
 import DigitalMarketing from "./components/Courses/DigitalMarketingCourse/DigitalMarketingCourse";

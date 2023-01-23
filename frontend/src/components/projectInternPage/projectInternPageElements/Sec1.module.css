@@ -26,7 +26,7 @@
 }
 
 .content {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .apply {
@@ -72,16 +72,13 @@
   }
 
   .heading {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1;
   }
 
   .content {
     font-size: 1.5rem;
   }
-}
-
-@media (max-width: 1400px) {
 }
 
 @media (max-width: 1350px) {
@@ -99,6 +96,7 @@
 
   .content {
     font-size: 1.5rem;
+    line-height: 2.5rem;
     margin-right: 0.5rem;
   }
 

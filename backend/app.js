@@ -24,7 +24,7 @@ const resumeStorage = multer.diskStorage({
     cb(null, __dirname + "/resumes");
   },
   filename: (req, file, cb) => {
-    cb(null, file.originalname + ".pdf");
+    cb(null, file.originalname);
   },
 });
 

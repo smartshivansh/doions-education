@@ -12,6 +12,7 @@ function ContactUs() {
   const [loading, setLoading] = useState(false);
   const [sucess, setSucess] = useState(false);
   const [submit, setSubmit] = useState(true);
+  const [textAreaError, setTextAreaError] = useState(null)
 
   function displayHandler() {
     setEmail("");
@@ -28,16 +29,25 @@ function ContactUs() {
     setMsg((p) => e.target.value);
   };
 
+  const msgFocusHandler = (e) => {
+    setMsg("")
+  }
+
   const formSubmitHandler = (e) => {
     e.preventDefault();
+    console.log(email, msg)
     if (msg.length < 1) {
+      setTextAreaError("Message field cant't be Empty")
       return;
     }
     setLoading(true);
 
-    fetch("https://www.education.doions.com/api/contactus", {
+    fetch("http://localhost:3002/api/contactus", {
       method: "POST",
       body: JSON.stringify({ email, msg }),
+      headers: {
+        "content-type": "application/json",
+      },
     })
       .then((res) => res.json())
       .then((res) => JSON.parse(res))
@@ -81,7 +91,9 @@ function ContactUs() {
           value={msg}
           type="text"
           onChange={msgChangeHandler}
+          onFocus={msgFocusHandler}
         ></textarea>
+        <p className={classes.error}>{textAreaError}</p>
         <input type="submit" className={classes.submit} />
       </form>
     </div>

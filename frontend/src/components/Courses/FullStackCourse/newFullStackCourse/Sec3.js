@@ -7,7 +7,7 @@ import pdf from "./images/fullstack.pdf";
 const Sec3 = () => {
   return (
     <div className={classes.container}>
-      <h1 className={classes.title}>Designed for an absolute BEGINNER</h1>
+      <h1 className={classes.title}>Designed for an absolute beginner</h1>
 
       {/* <p className={classes.content}>
         <span className={classes.rights}></span>Provide Basic idea of coding

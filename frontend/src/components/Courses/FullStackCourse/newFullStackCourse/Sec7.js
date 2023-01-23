@@ -36,15 +36,15 @@ const Sec7 = () => {
       <div className={classes.techcont}>
         <div className={classes.reactcont}>
           <img className={classes.vscode} alt="img" src={vscode} />
-          <p>VS Code</p>
+          <p className={classes.content}>VS Code</p>
         </div>
         <div className={classes.reactcont}>
           <img className={classes.github} alt="img" src={github} />
-          <p>GitHub</p>
+          <p className={classes.content}>GitHub</p>
         </div>
         <div className={classes.reactcont}>
           <img className={classes.react} alt="img" src={react} />
-          <p>React</p>
+          <p className={classes.content}>React</p>
         </div>
 
         <div className={classes.backend}>

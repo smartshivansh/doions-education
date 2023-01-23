@@ -17,7 +17,11 @@ const Sec3 = () => {
         <li className={classes.listitem}>
           You will get hands-on experience of working on a project that is going
           to be a commercial product in future.{" "}
-          <a target="blank" href="doornextshop.com">
+          <a
+            target="blank"
+            style={{ color: "red" }}
+            href="https://locallearn.in/"
+          >
             Know more
           </a>
         </li>
@@ -26,10 +30,10 @@ const Sec3 = () => {
           you improve your skills.
         </li>
         <li className={classes.listitem}>
-          Help you improve your skills. You’ll get an all-round learning
-          experience of working with a product-based start-up. Learn about
-          latest technologies, develop soft skills, personality development etc.
-          and stand out among your peers and friends.
+          You’ll get an all-round learning experience of working with a
+          product-based start-up. Learn about latest technologies, develop soft
+          skills, personality development etc. and stand out among your peers
+          and friends.
         </li>
         <li className={classes.listitem}>
           You’ll also get a certificate upon completion of the tenure.

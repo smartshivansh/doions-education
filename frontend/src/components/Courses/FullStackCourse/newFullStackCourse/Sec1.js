@@ -26,7 +26,7 @@ const Sec1 = () => {
             A 12-week self-directed, project based learning program to help you
             get into a entry-level software developer job!
           </p>
-          <p className={classes.startDate}>Strating from 1st January 2023.</p>
+          <p className={classes.startDate}>Starting from 1st February 2023.</p>
         </div>
         <div className={classes.apply}>
           <div className={classes.applybtn} onClick={formShowHandler}>

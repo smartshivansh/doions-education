@@ -54,7 +54,7 @@ const ApplyNowForm = (props) => {
     }
     //https://www.education.doions.com
     try {
-      fetch("https://www.education.doions.com/api/projintern", {
+      fetch("http://localhost:3002/api/projintern", {
         method: "POST",
         body: JSON.stringify({ name, email, mobile }),
         headers: {
@@ -67,7 +67,7 @@ const ApplyNowForm = (props) => {
           if (data.sucess) {
             const resume = new FormData();
             resume.append("resume", file);
-            fetch("https://www.education.doions.com/api/resume", {
+            fetch("http://localhost:3002/api/resume", {
               method: "POST",
               body: resume,
             })

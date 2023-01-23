@@ -10,7 +10,7 @@ const Sec10 = () => {
       <h1 className={classes.heading}>
         Any questions? Just Ask! We'll be happy to answer
       </h1>
-      <p>
+      <p className={classes.content}>
         Let's have a commitment-free conversation and get to know more about it.
       </p>
       <ContactUs />

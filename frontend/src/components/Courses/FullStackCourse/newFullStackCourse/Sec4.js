@@ -1,31 +1,36 @@
 import React from "react";
 import classes from "./Sec4.module.css";
 
+import classroom from "./images/classroom.svg";
+import group from "./images/group.svg";
+import bulb from "./images/bulb.svg";
+import project from "./images/project.svg";
+
 const Sec4 = () => {
   return (
     <div className={classes.container}>
       <h1 className={classes.heading}>
-        Activities on Weekly-Basis (Total 75 hours)
+        Activities on weekly-basis (Total 75 hours)
       </h1>
       <div className={classes.cardContainer}>
         <div className={classes.card}>
-          <div className={classes.c1}></div>
-          <h3 className={classes.desp}>Classroom Activities (25 hours)</h3>
+          <img src={classroom} alt="classroom" className={classes.c1} />
+          <h3 className={classes.desp}>Classroom activities (25 hours)</h3>
         </div>
         <div className={classes.card}>
-          <div className={classes.c2}></div>
-          <h3 className={classes.desp}>Team Activities (10 hours)</h3>
+          <img src={group} alt="group" className={classes.c1} />
+          <h3 className={classes.desp}>Team activities (10 hours)</h3>
         </div>
         <div className={classes.card}>
-          <div className={classes.c3}></div>
+          <img src={bulb} alt="bulb" className={classes.c1} />
           <h3 className={classes.desp}>
-            Live Product Development and Coding (30 hours)
+            Live product development and coding (30 hours)
           </h3>
         </div>
         <div className={classes.card}>
-          <div className={classes.c4}></div>
+          <img src={project} alt="project" className={classes.c1} />
           <h3 className={classes.desp}>
-            live Project Realated Activities (10 hours)
+            Live project realated activities (10 hours)
           </h3>
         </div>
       </div>

@@ -5,13 +5,13 @@ import classes from "./Sec6.module.css";
 const Sec6 = () => {
   return (
     <div className={classes.container}>
-      <h1 className={classes.heading}>You Will Get</h1>
+      <h1 className={classes.heading}>You will get</h1>
       <ul className={classes.list}>
         <li className={classes.listitem}>
-          <span className={classes.right}></span>A certificate of completion.
+          <span className={classes.right}></span>A certificate on completion.
         </li>
         <li className={classes.listitem}>
-          <span className={classes.right}></span>A Live Project Experiense of
+          <span className={classes.right}></span>A Live project experience of
           Locallearn.
         </li>
         <li className={classes.listitem}>
@@ -23,7 +23,9 @@ const Sec6 = () => {
           corporate setup.
         </li>
 
-        <li className={classes.subHeading}>Know more about Locallearn</li>
+        <a href="https://locallearn.in/">
+          <p className={classes.subHeading}>Know more about Locallearn</p>
+        </a>
       </ul>
     </div>
   );

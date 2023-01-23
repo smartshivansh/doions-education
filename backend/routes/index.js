@@ -43,7 +43,7 @@ router.post("/fullstack", (req, res) => {
     from: "in@myty.in",
     to: "shivani.ahirvar@doions.com",
     subject: "new application fullsatck development course",
-    text: `New response for fullstack coursehas been received. details are as follow
+    text: `New response for fullstack course has been received. details are as follow
      name:- ${name}, email:- ${email}, mobile No:- ${mobile}`,
   };
 
@@ -60,30 +60,23 @@ router.post("/fullstack", (req, res) => {
   });
 });
 
-// router.post("/", function (req, res, next) {
-//   console.log(req.body);
-//   res.status(200).send({ name: "shivjeet", age: 25 });
-// });
 
 router.post("/projintern", (req, res) => {
   const { name, email, mobile } = req.body;
-  const user = ProjectIntern.create({
-    name,
-    email,
-    mobile,
-  });
-  if (user) {
-    res
-      .status(200)
-      .json(JSON.stringify({ sucess: true, msg: "user added successfully" }));
-  } else {
-    res
+  
+  if (name === "" || email === "" || mobile === "") {
+    return res
       .status(200)
       .json(JSON.stringify({ sucess: false, msg: "invalid input" }));
   }
+
+  return res
+      .status(200)
+      .json(JSON.stringify({ sucess: true, msg: "user added sucessfully" }));
 });
 
 router.post("/resume", (req, res) => {
+  console.log(req.file);
   const mailOptions = {
     from: "in@myty.in",
     to: "shivani.ahirvar@doions.com",
@@ -115,10 +108,6 @@ router.post("/resume", (req, res) => {
 
 router.post("/contactus", (req, res) => {
   const { email, msg } = req.body;
-
-  if (!email || !msg) {
-    return res.status(200).json(JSON.stringify({ sucess: false }));
-  }
 
   const mailOptions = {
     from: "in@myty.in",

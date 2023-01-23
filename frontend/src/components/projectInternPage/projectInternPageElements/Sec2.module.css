@@ -26,18 +26,35 @@
   line-height: 2.5rem;
 }
 
-@media (max-width: 980px) {
-  .container {
-    margin-top: 4rem;
-  }
+@media (max-width: 1550px) {
   .heading {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
-  .content {
-    font-size: 1.5rem;
-  }
+
+  .content,
   .listitem {
     font-size: 1.5rem;
-    list-style: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 1.9rem;
+  }
+
+  .content,
+  .listitem {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  .content {
+    font-size: 1.25rem;
   }
 }

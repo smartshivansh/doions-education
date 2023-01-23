@@ -20,7 +20,7 @@ const Sec4 = () => {
           experience working in these domains.
         </li>
         <li className={classes.listitem}>
-          This program aims to give you industry experience and help you be
+          This program aims to give you industry experience and will make you
           job-ready!
         </li>
         <li className={classes.listitem}>Flexible work timings.</li>

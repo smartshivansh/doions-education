@@ -35,8 +35,8 @@
 }
 
 .navbar {
-  width: 50%;
-  min-width: max-content;
+  width: 60%;
+  /* min-width: max-content; */
   display: flex;
   justify-content: space-between;
 }
@@ -44,6 +44,7 @@
 .navitem {
   font-size: 1.5rem;
   margin: auto 1rem;
+  min-width: max-content;
 }
 
 .navitem:hover {

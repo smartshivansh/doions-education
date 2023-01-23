@@ -101,7 +101,7 @@ const ApplyNowFormFullStack = (props) => {
           </div>
           <p
             className={classes.msg}
-          >{`Hi ${name},You are successfully enrolled for our 90 days Bootcamp program. Classes will be offline, we’ll contact and let you updated about the progress. Thank you!`}</p>
+          >{`Hi ${name},You are successfully enrolled for our 90 days program. Classes will be offline, we’ll contact and let you updated about the progress. Thank you!`}</p>
         </div>
       )}
       {!sucess && (
